@@ -9,6 +9,6 @@
  #Set working directory where application will compile
  WORKDIR /usr/share/fld_c
  # Compile .c application
- RUN gcc -o myapp main.c
+ RUN gcc -o myapp hello.c
  # Execute My application
  CMD ["./myapp"]
