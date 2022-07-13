@@ -5,7 +5,7 @@
  # Install the latest versions of the packages currently installed
  RUN apt update
  # Installing a GCC compiler onto a Docker image
- RUN apt-get install gcc
+ RUN apt-get -y install gcc
  # Make directory called fld_c
  RUN mkdir fld_c
  # Copying myfile1.txt to the containers /usr/share directory
