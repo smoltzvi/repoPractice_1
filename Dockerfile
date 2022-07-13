@@ -9,9 +9,9 @@
  # Make directory called fld_c
  RUN mkdir fld_c
  # Copying myfile1.txt to the containers /usr/share directory
- COPY *.c /usr/share/fld_c
+ COPY *.c /usr/share
  #Set working directory where application will compile
- WORKDIR /usr/share/fld_c/
+ WORKDIR /usr/share
  # Compile .c application
  RUN gcc -o myapp hello.c
  # Execute My application
