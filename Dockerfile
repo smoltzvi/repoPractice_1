@@ -11,7 +11,7 @@
  # Copying myfile1.txt to the containers /usr/share directory
  COPY *.c /usr/share/fld_c
  #Set working directory where application will compile
- WORKDIR /usr/share/fld_c
+ WORKDIR /usr/share/fld_c/
  # Compile .c application
  RUN gcc -o myapp hello.c
  # Execute My application
