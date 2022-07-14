@@ -7,7 +7,7 @@
  RUN apt update
  # Installing a GCC compiler onto a Docker image
  RUN apt-get -y install gcc
- # Copying myfile1.txt to the containers /usr/share directory
+ # Copying .c files to the containers /usr/share directory
  COPY *.c /usr/share/
  #Set working directory where application will compile
  WORKDIR /usr/share
